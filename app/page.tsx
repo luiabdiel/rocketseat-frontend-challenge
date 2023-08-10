@@ -1,5 +1,3 @@
 export default function Home() {
-  return (
-    <span>home</span>
-  )
+  return <span>home</span>
 }
