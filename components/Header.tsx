@@ -27,6 +27,9 @@ const TagHeader = styled.header`
 
 const Logo = styled.a`
   color: var(--logo-color);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 150%;
 `
 
 const Header = () => {
