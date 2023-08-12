@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { CartIcon } from '.'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
@@ -6,15 +8,14 @@ import { styled } from 'styled-components'
 const CartCount = styled.span`
   width: 17px;
   height: 17px;
-  left: 1263px;
-  top: 43px;
+  border-radius: 100%;
+  padding: 0 5px;
+  font-size: 10px;
 
   background-color: var(--delete-color);
-  color: #fff;
+  color: white;
 
-  position: absolute;
-  right: -10px;
-  top: 50%;
+  margin-left: -10px;
 `
 
 const Container = styled.div`
@@ -22,14 +23,12 @@ const Container = styled.div`
 `
 
 const CartControl = () => {
-  const { value } = useLocalStorage<string[]>('cart-items') // Assuming 'value' is an array of strings
-
-  const cartItemCount = value ? value.length : 0
+  const { value } = useLocalStorage('cart-items')
 
   return (
     <Container>
       <CartIcon />
-      {cartItemCount > 0 && <CartCount>{cartItemCount}</CartCount>}
+      {value.length && <CartCount>{value.length}</CartCount>}
     </Container>
   )
 }
