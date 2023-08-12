@@ -25,6 +25,8 @@ const FilterItem = styled.li<FilterItemProps>`
   text-transform: uppercase;
   color: var(--text-dark);
 
+  cursor: pointer;
+
   border-bottom: ${({ selected }) =>
     selected ? '4px solid var(--orange-low)' : ''};
 `
