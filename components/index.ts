@@ -5,6 +5,8 @@ import CartIcon from './CartIcon'
 import CartControl from './CartControl'
 import FilterByType from './FilterByType'
 import FilterBar from './FilterBar'
+import FilterByPriority from './FilterByPriority'
+import ArrowIcon from './ArrowIcon'
 
 export {
   Header,
@@ -14,4 +16,6 @@ export {
   CartControl,
   FilterByType,
   FilterBar,
+  FilterByPriority,
+  ArrowIcon,
 }
