@@ -7,6 +7,7 @@ import FilterByType from './FilterByType'
 import FilterBar from './FilterBar'
 import FilterByPriority from './FilterByPriority'
 import ArrowIcon from './ArrowIcon'
+import ProductsList from './ProductsList'
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   FilterBar,
   FilterByPriority,
   ArrowIcon,
+  ProductsList,
 }
