@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
@@ -5,7 +7,7 @@ import { styled } from 'styled-components'
 interface ProductCardProps {
   image: string
   title: string
-  price: string
+  price: number
 }
 
 const Card = styled.div`
@@ -20,11 +22,6 @@ const Card = styled.div`
   border-radius: 0px 0px 4px 4px;
 
   width: 256px;
-
-  Image {
-    width: 256px;
-    height: 300px;
-  }
 
   h3 {
     font-size: 16px;
@@ -51,7 +48,7 @@ const Card = styled.div`
 const ProductCard = ({ image, title, price }: ProductCardProps) => {
   return (
     <Card>
-      <Image src={image} alt={title} />
+      <Image src={image} alt={title} width={256} height={300} />
       <h3>{title}</h3>
       <div />
       <p>{price}</p>
