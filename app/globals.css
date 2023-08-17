@@ -2,12 +2,14 @@
   --border-radius: 12px;
   --logo-color: #5d5d5d;
   --bg-secondary: #f3f5f6;
+  --bg-primary: #f0f0f5;
   --text-dark: #737380;
-  --shapes-dark: #09090a,
-  --text-dark-2: #41414d,
+  --shapes-dark: #09090a;
+  --text-dark-2: #41414d;
   --delete-color: #de3838;
   --orange-low: #ffa585;
   --shapes: #dce2e6;
+  --white: #fff;
 }
 
 * {

@@ -13,7 +13,7 @@ const CartCount = styled.span`
   font-size: 10px;
 
   background-color: var(--delete-color);
-  color: white;
+  color: var(--white);
 
   margin-left: -10px;
 `
