@@ -1,5 +1,6 @@
 'use client'
 
+import { formatPrice } from '@/utils/Format'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
@@ -37,21 +38,34 @@ const Card = styled.div`
     color: var(--shapes-dark);
   }
 
-  > div {
-    width: 228px;
-    height: 1px;
-    margin: 8px 0px;
-    background: var(--shapes);
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 8px 0;
+
+    > div {
+      width: 228px;
+      height: 1px;
+      margin: 8px 0px;
+      padding: 0;
+      background: var(--shapes);
+    }
   }
 `
 
 const ProductCard = ({ image, title, price }: ProductCardProps) => {
+  const priceFormattedForReal = formatPrice(price)
+
   return (
     <Card>
       <Image src={image} alt={title} width={256} height={300} />
-      <h3>{title}</h3>
-      <div />
-      <p>{price}</p>
+      <div>
+        <h3>{title}</h3>
+        <div />
+        <p>{priceFormattedForReal}</p>
+      </div>
     </Card>
   )
 }
