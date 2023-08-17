@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { styled } from 'styled-components'
 import { ArrowIcon } from '.'
 import { useFilter } from '@/hooks/useFilter'
-import { Priority } from '@/types/Priority'
+import { PriorityTypes } from '@/types/Priority'
 
 const FilterContainer = styled.div`
   display: flex;
@@ -45,6 +45,7 @@ const PriorityFilter = styled.ul`
 
   list-style: none;
 
+  z-index: 999;
   top: 100%;
 
   li {
@@ -67,7 +68,7 @@ const FilterByPriority = () => {
 
   const handleOpen = () => setIsOpen((prev) => !prev)
 
-  const handleUpdatePriority = (value: Priority) => {
+  const handleUpdatePriority = (value: PriorityTypes) => {
     setPriority(value)
     setIsOpen(false)
   }
@@ -79,14 +80,16 @@ const FilterByPriority = () => {
       </button>
       {isOpen && (
         <PriorityFilter>
-          <li onClick={() => handleUpdatePriority(Priority.NEWS)}>Novidade</li>
-          <li onClick={() => handleUpdatePriority(Priority.BIGGEST_PRICE)}>
+          <li onClick={() => handleUpdatePriority(PriorityTypes.NEWS)}>
+            Novidade
+          </li>
+          <li onClick={() => handleUpdatePriority(PriorityTypes.BIGGEST_PRICE)}>
             Preço: Maior - Menor
           </li>
-          <li onClick={() => handleUpdatePriority(Priority.MINOR_PRICE)}>
+          <li onClick={() => handleUpdatePriority(PriorityTypes.MINOR_PRICE)}>
             Preço: Menor - Maior
           </li>
-          <li onClick={() => handleUpdatePriority(Priority.POPULARITY)}>
+          <li onClick={() => handleUpdatePriority(PriorityTypes.POPULARITY)}>
             Mais Vendidos
           </li>
         </PriorityFilter>
