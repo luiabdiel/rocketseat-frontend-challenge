@@ -10,7 +10,8 @@ interface DefaultProvidersProps {
 }
 
 const theme = {
-  destokBreackpoint: '768px',
+  destokBreackpoint: '968px',
+  tableBreackpoint: '768px',
 }
 
 const DefaultProviders = ({ children }: DefaultProvidersProps) => {
