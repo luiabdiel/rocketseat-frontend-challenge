@@ -9,6 +9,9 @@ import FilterByPriority from './FilterByPriority'
 import ArrowIcon from './ArrowIcon'
 import ProductsList from './ProductsList'
 import ProductCard from './ProductCard'
+import DefaultPageLayout from './DefaultPageLayout'
+import BackIcon from './BackIcon'
+import BackButton from './BackButton'
 
 export {
   Header,
@@ -22,4 +25,7 @@ export {
   ArrowIcon,
   ProductsList,
   ProductCard,
+  DefaultPageLayout,
+  BackIcon,
+  BackButton,
 }
