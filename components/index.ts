@@ -12,6 +12,7 @@ import ProductCard from './ProductCard'
 import DefaultPageLayout from './DefaultPageLayout'
 import BackIcon from './BackIcon'
 import BackButton from './BackButton'
+import ShopBagIcon from './ShopBagIcon'
 
 export {
   Header,
@@ -28,4 +29,5 @@ export {
   DefaultPageLayout,
   BackIcon,
   BackButton,
+  ShopBagIcon,
 }
