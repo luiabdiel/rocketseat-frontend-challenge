@@ -1,37 +1,37 @@
 import Header from './Header'
-import SearchIcon from './SearchIcon'
 import PrimaryInputWithSearchIcon from './PrimaryInput'
-import CartIcon from './CartIcon'
 import CartControl from './CartControl'
 import FilterByType from './FilterByType'
 import FilterBar from './FilterBar'
 import FilterByPriority from './FilterByPriority'
-import ArrowIcon from './ArrowIcon'
 import ProductsList from './ProductsList'
 import ProductCard from './ProductCard'
 import DefaultPageLayout from './DefaultPageLayout'
-import BackIcon from './BackIcon'
 import BackButton from './BackButton'
-import ShopBagIcon from './ShopBagIcon'
 import CartItem from './CartItem'
-import DeleteIcon from './DeleteIcon'
+import ArrowIcon from './icons/ArrowIcon'
+import BackIcon from './icons/BackIcon'
+import CartIcon from './icons/CartIcon'
+import DeleteIcon from './icons/DeleteIcon'
+import SearchIcon from './icons/SearchIcon'
+import ShopBagIcon from './icons/ShopBagIcon'
 
 export {
   Header,
-  SearchIcon,
   PrimaryInputWithSearchIcon,
-  CartIcon,
   CartControl,
   FilterByType,
   FilterBar,
   FilterByPriority,
-  ArrowIcon,
   ProductsList,
   ProductCard,
   DefaultPageLayout,
-  BackIcon,
   BackButton,
-  ShopBagIcon,
+  ArrowIcon,
+  BackIcon,
   CartItem,
+  CartIcon,
   DeleteIcon,
+  SearchIcon,
+  ShopBagIcon,
 }
