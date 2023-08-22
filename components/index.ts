@@ -14,6 +14,7 @@ import BackIcon from './BackIcon'
 import BackButton from './BackButton'
 import ShopBagIcon from './ShopBagIcon'
 import CartItem from './CartItem'
+import DeleteIcon from './DeleteIcon'
 
 export {
   Header,
@@ -32,4 +33,5 @@ export {
   BackButton,
   ShopBagIcon,
   CartItem,
+  DeleteIcon,
 }
