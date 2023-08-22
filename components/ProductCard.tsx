@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import { styled } from 'styled-components'
+import { Divider } from '.'
 
 interface ProductCardProps {
   image: string
@@ -46,15 +47,9 @@ const Card = styled.div`
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 8px 0;
+    padding: 8px 12px;
 
-    > div {
-      width: 228px;
-      height: 1px;
-      margin: 8px 0px;
-      padding: 0;
-      background: var(--shapes);
-    }
+    width: 100%;
   }
 `
 
@@ -71,7 +66,7 @@ const ProductCard = ({ image, title, price, id }: ProductCardProps) => {
       <Image src={image} alt={title} width={256} height={300} />
       <div>
         <h3>{title}</h3>
-        <div />
+        <Divider />
         <p>{priceFormattedForReal}</p>
       </div>
     </Card>
