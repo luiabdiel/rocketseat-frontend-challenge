@@ -15,6 +15,7 @@ import CartIcon from './icons/CartIcon'
 import DeleteIcon from './icons/DeleteIcon'
 import SearchIcon from './icons/SearchIcon'
 import ShopBagIcon from './icons/ShopBagIcon'
+import Divider from './Divider'
 
 export {
   Header,
@@ -34,4 +35,5 @@ export {
   DeleteIcon,
   SearchIcon,
   ShopBagIcon,
+  Divider,
 }
