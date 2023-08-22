@@ -26,7 +26,7 @@ const TagHeader = styled.header`
     gap: 24px;
   }
 
-  @media (min-width: ${(props) => props.theme.destokBreackpoint}) {
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
     padding: 20px 160px;
   }
 
@@ -48,7 +48,7 @@ const Logo = styled.a`
     font-size: 24px;
   }
 
-  @media (min-width: ${(props) => props.theme.destokBreackpoint}) {
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
     font-size: 40px;
   }
 `

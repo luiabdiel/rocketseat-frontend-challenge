@@ -32,7 +32,7 @@ const FilterItem = styled.li<FilterItemProps>`
   border-bottom: ${({ selected }) =>
     selected ? '4px solid var(--orange-low)' : ''};
 
-  @media (min-width: ${(props) => props.theme.destokBreackpoint}) {
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
     font-size: 16px;
     line-height: 22px;
   }
