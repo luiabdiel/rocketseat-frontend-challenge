@@ -4,6 +4,7 @@ import React from 'react'
 import { CartIcon } from '.'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { styled } from 'styled-components'
+import { useRouter } from 'next/navigation'
 
 const CartCount = styled.span`
   width: 17px;
@@ -18,15 +19,25 @@ const CartCount = styled.span`
   margin-left: -10px;
 `
 
-const Container = styled.div`
+const Container = styled.button`
   position: relative;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
 `
 
 const CartControl = () => {
+  const router = useRouter()
   const { value } = useLocalStorage('cart-items', [])
 
+  const handleNavigateToCart = () => {
+    router.push('/cart')
+  }
+
   return (
-    <Container>
+    <Container onClick={handleNavigateToCart}>
       <CartIcon />
       {value.length > 0 && <CartCount>{value.length}</CartCount>}
     </Container>
