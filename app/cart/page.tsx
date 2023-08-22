@@ -68,7 +68,11 @@ const CartPage = () => {
       return { ...item, quantity }
     })
 
-    console.log(newValue)
+    updateLocalStorage(newValue)
+  }
+
+  const handleDeleteItem = (id: string) => {
+    const newValue = value.filter((item) => item.id !== id)
 
     updateLocalStorage(newValue)
   }
@@ -89,6 +93,7 @@ const CartPage = () => {
                 product={item}
                 key={item.id}
                 handleUpdateQuantity={handleUpdateQuantity}
+                handleDelete={handleDeleteItem}
               />
             ))}
           </CartList>
