@@ -37,6 +37,7 @@ const CartListContainer = styled.div`
 
     span {
       font-weight: 600;
+      margin-left: 4px;
     }
   }
 `
@@ -140,7 +141,7 @@ const CartPage = () => {
           <BackButton navigate="/" />
           <h3>Seu carrinho</h3>
           <p>
-            Total {value.length} produtos
+            Total ({value.length} produtos)
             <span>{cartTotal}</span>
           </p>
           <CartList>
